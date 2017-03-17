@@ -10,8 +10,12 @@ namespace math {
 			this->y = y;
 		}
 
-		~Vector() {
+		Vector() {
+			x = 0;
+			y = 0;
+		}
 
+		~Vector() {
 		}
 
 		double getLength() {
@@ -19,7 +23,7 @@ namespace math {
 		}
 
 		Vector operator +(Vector vector) {
-			return Vector(vector.getX()+this->x, vector.getX() + this->x);
+			return Vector(vector.getX()+this->x, vector.getY() + this->y);
 		}
 
 		Vector operator *(double a) {

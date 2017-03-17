@@ -26,6 +26,7 @@ public:
 	void update(double deltaTime,CelestialBody* body) {
 		culculateAcceleration(body);
 		culculateSpeed(deltaTime);
+		culculatePosition(deltaTime);
 	}
 
 	void culculateAcceleration(CelestialBody* body) {
